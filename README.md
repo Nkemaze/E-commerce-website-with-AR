@@ -9,7 +9,6 @@ An advanced **E-commerce web application** built with **Laravel** that integrate
 ![Project Preview](preview.png)
 ![Dashboard](dashboard.png)
 
-> 📷 Replace `preview.png` with your actual image filename in the repo folder.
 
 ---
 
