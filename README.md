@@ -57,7 +57,7 @@ An advanced **E-commerce web application** built with **Laravel** that integrate
 
 ```bash
 # 1. Clone the repo
-git clone https://github.com/yourusername/ar-ecommerce.git
+git clone https://github.com/nkemaze/ar-ecommerce.git
 
 # 2. Navigate into the project
 cd ar-ecommerce
