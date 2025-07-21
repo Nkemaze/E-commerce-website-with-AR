@@ -1,0 +1,1 @@
+<a href="{{ url('index') }}"><img src="{{ asset('assets/images/logo.png') }}" alt="ARILESHOPE_LOGO" style="width: 300px"></a>

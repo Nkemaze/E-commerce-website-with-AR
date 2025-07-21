@@ -1,0 +1,260 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    margin: 30px;
+}
+
+.page-title{
+    margin: 60px;
+    font-size: 40px;
+    margin-left: 0PX;
+}
+
+.checkout-steps{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.checkout-steps__item{
+    text-decoration: none;
+    line-height: 2;
+    color: black;
+}
+
+.checkout-steps__item.active,.checkout-steps {
+    position: relative;
+}
+
+.checkout-steps:after{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(212, 212, 212);
+}
+
+.checkout-steps__item.active::after{
+    z-index: 1;
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #6356E5;
+}
+
+.checkout-steps__item-number{
+    padding-left: 0px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+.checkout-steps_item-title span{
+    width: 100%;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.checkout-steps_item-title .sub-title{
+    display: block;
+    padding-left: 40px;
+    color: gray;
+    font-size: 15px;
+}
+
+em{
+    text-transform: none;
+}
+
+.shopping-cart{
+    display: flex;
+    width: 100%;
+}
+
+.cart-table__wrapper{
+    flex: 8;
+}
+
+thead{
+    position: relative;
+}
+
+
+
+thead tr th{
+    padding-bottom: 50px;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+tbody tr td:first-child,tbody tr td:nth-child(2){
+    width: 170px;
+}
+
+tbody tr td{
+    padding-bottom: 50px;
+}
+
+
+
+tbody tr td h4{
+    font-size: 17px;
+    line-height: 2.5;
+    font-weight: 50;
+}
+
+.shopping-cart__product-item__options li{
+    list-style: none;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 50;
+    color: gray;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+  
+.quantity button {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+  
+.quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    padding: 5px;
+}
+  
+.total{
+    padding-right: 30px;
+}
+
+.btn-class{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-class button{
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-class a{
+    text-decoration: none;
+    color: black;
+}
+
+.shopping-cart__totals-wrapper{
+    flex: 4;
+}
+
+.sticky-content{
+    width: 90%;
+    border: 1px solid black;
+    padding: 30px;
+    height: 75%;
+    margin-bottom: 30px;
+}
+
+.mobile_fixed-btn_wrapper{
+    width: 107%;
+    height: 10%;
+    background-color: black;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+.mobile_fixed-btn_wrapper a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.shopping-cart__totals h3{
+    font-weight: 200;
+    padding: 20px;
+}
+
+.shopping-cart__totals tr{
+    display: flex;
+    line-height: 40px;
+}
+
+.shopping-cart__totals tr th{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 10px;
+}
+
+.shopping-cart__totals tbody tr::after{
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(212, 212, 212);
+} 
+
+.shopping-cart__totals a{
+    text-decoration: none;
+}
+
+.section-title{
+    padding: 20px;
+    padding-bottom: 60px;
+    font-weight: 400;
+}
+
+form{
+    width: 90%;
+    height: 30%;
+}
+
+form .first-row, .second-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+form .first-row input{
+    width: 44%;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+form .second-row input{
+    width: 27%;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+form .last-row input{
+    width: 96.5%;
+    height: 50px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}

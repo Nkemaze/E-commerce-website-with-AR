@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    margin-top: 100px;
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 300px;
+    width: 100%;
+}
+
+.contact-us{
+    width: 100%;  
+}
+
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.container{
+    justify-content: center;
+    justify-items: center;
+}
+
+.contact-form{
+    width: 70%;
+    height: 200px;
+}
+
+form{
+    width: 100%;
+}
+
+.form-control{
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group{
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.form-group input, .form-group textarea{
+    width: 80%;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 90%;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+}
+
+.form-group label{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 13px;
+    color: black;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    background: white;
+    padding: 0 5px;
+}
+
+form .form-group textarea{
+    height: 100px;
+}
+
+form button{
+    background-color: #6356E5;
+    color: white;
+    border-radius: 5px;
+    margin-right: 70px;
+    text-decoration: none;
+    height: 40px;
+    border: none;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    transition: box-shadow 0.9s;
+    cursor: pointer;
+}
+
+form button:hover{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.55);
+}
+
+.form-control:focus + .form-label,
+.form-control:not(:placeholder-shown) + .form-label {
+    top: 5px;
+    font-size: 12px;
+    color: #6356E5;
+}
+
+.form-control:focus {
+    border-color: #6356E5;
+}

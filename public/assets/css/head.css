@@ -1,0 +1,275 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100%;
+    min-width: 493px;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+
+.hidden { 
+    display: none; 
+}
+
+header{
+    width: 100%;
+}
+
+nav{
+    background-color: #e8e7fa;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display:  flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 60px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    position: relative;
+}
+
+nav .other a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #6356E5;
+    transition: width 0.7s ease-in-out;
+    transform: translateX(10%); 
+    bottom: 15px;
+
+}
+
+nav .other a:hover::after {
+    width: 30%;
+    align-items: center;
+}
+
+nav li:nth-last-child(2) a::after {
+    content: none;
+}
+
+nav li:first-child a::after {
+    content: none;
+}
+
+nav li:last-child a::after {
+    content: none;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+nav li:nth-last-child(2){
+    margin-left: auto;
+}
+
+.logo{
+    cursor: pointer;
+    padding-left: 20px;
+    width: 250px;
+    height: 100%;
+}
+
+#link{
+    align-content: center;
+}
+
+.join{
+    background-color: #6356E5;
+    color: white;
+    border-radius: 5px;
+    margin-right: 70px;
+    text-decoration: none;
+    height: 40px;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: #e8e7fa5b;
+    backdrop-filter: blur(10px);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    width: 100%;
+}
+
+.sidebar .join{
+    width: 20%;
+    margin-left: 20px;
+}
+
+.sidebar li:not(:last-child):hover {
+    background-color: #e9e8f7;
+}
+
+.icons-1{
+    display: flex;
+    margin-left: 90px;
+}
+.menu{
+    display: none;
+}
+
+#loged{
+    display: none;
+}
+
+@media(max-width:925px){
+    nav a{
+        font-size: 13px;
+    }
+
+}
+
+@media(max-width:976px){
+    .hideonmobile{
+        display: none;
+    }
+    .other .icons-1{
+        display: none;
+    }
+
+    .sidebar .icons-1{
+        margin-left: 0px;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+@media(max-width:335px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+.footer {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    /* bottom: 0;
+    position: fixed; */
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-logo img {
+    margin-right: auto;   
+    height: 60px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    position: relative;
+    color: black;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #6356E5;
+    transition: width 0.7s ease-in-out;
+    transform: translateX(10%);
+    bottom: -3px;
+}
+
+.footer-links a:hover::after {
+    width: 50%;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.footer-bottom {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer-bottom a{
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #6356E5;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
