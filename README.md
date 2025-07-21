@@ -22,8 +22,6 @@ An advanced **E-commerce web application** built with **Laravel** that integrate
   - Register/Login with role-based access (Admin, Customer)
 - 📦 **Product Management**
   - Admin CRUD operations for products, categories, users
-- 📈 **Order Tracking & Management**
-  - Real-time order updates and admin control
 - 📱 **Responsive UI**
   - Optimized for desktop, tablet, and mobile views
 
@@ -47,30 +45,6 @@ An advanced **E-commerce web application** built with **Laravel** that integrate
 | **MySQL** | Database |
 | **HTML, CSS, JS** | UI |
 | **Three.js / WebXR** | AR Integration |
-| **Bootstrap/Tailwind** | Styling |
-| **Rembg + Depth Estimation** | (Optional) Clothing 3D mesh generation |
+| **Bootstrap** | Styling |
 
 ---
-
-## ⚙️ Installation & Setup
-
-```bash
-# 1. Clone the repo
-git clone https://github.com/nkemaze/ar-ecommerce.git
-
-# 2. Navigate into the project
-cd ar-ecommerce
-
-# 3. Install dependencies
-composer install
-npm install && npm run dev
-
-# 4. Setup environment
-cp .env.example .env
-php artisan key:generate
-
-# 5. Configure your DB in .env, then:
-php artisan migrate --seed
-
-# 6. Start the server
-php artisan serve
